@@ -6,7 +6,7 @@ defmodule HelloWeb.Live.InnerView do
   def render(assigns) do
     ~H"""
       <div>
-        <%= live_component InnerStatefulComponent, id: :my_child_component, text: "Hello, world!" %>
+        <.live_component module={InnerStatefulComponent} id={:my_child_component} text="Hello, world!" />
       </div>
     """
   end

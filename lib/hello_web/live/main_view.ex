@@ -9,8 +9,8 @@ defmodule HelloWeb.Live.MainView do
   def render(assigns) do
     ~H"""
       <div id="main_view">
-        <%# live_component MainComponent, id: "my_main_component" %>
-        <%= live_component MainComponent %>
+        <.live_component module={MainComponent} id="my_main_component" />
+        <!-- <.live_component module={MainComponent} /> -->
       </div>
     """
   end
